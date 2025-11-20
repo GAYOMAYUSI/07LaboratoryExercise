@@ -24,7 +24,7 @@ namespace _07LaboratoryExercise
         public BindingSource bindingSource = new BindingSource();
 
         // adds #5 b. establish local connection
-        private static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\CLAB1-\\Documents\\07LaboratoryExercise\\ClubDB.mdf;Integrated Security=True;";
+        private static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Gayoma\\Downloads\\07LaboratoryExercise-main\\07LaboratoryExercise-main\\ClubDB.mdf;Integrated Security=True;";
       
         public string _FirstName, _MiddleName, _LastName, _Gender, _Program;
         public int _Age;
@@ -46,7 +46,7 @@ namespace _07LaboratoryExercise
             // adds #7 c.
             dataTable.Clear();
             sqlAdapater.Fill(dataTable);
-            bindingSource.DataSource = dataTable; 
+            bindingSource.DataSource = dataTable;
         }
 
         // adds #8
